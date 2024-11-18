@@ -1,0 +1,52 @@
+#TO CALCULATE WORK_DONE
+def a():
+    force = float(input('enter your force'))
+    distance = float(input('enter your distance'))
+    work_done = force * distance
+    print(work_done)
+
+
+#TO CALCULATE THE DIFFERNCE OF TWO NUMBERS
+def b():
+        num1 = float(input('enter your num1'))
+        num2 = float(input('enter your num2'))
+        difference = num1 - num2
+        print(difference)
+
+#TO CALCULATE THE VELOCITY OF A BODY
+def c():
+    displacement = float(input('enter your displacement'))
+    time = float(input('enter your time'))
+    velocity = displacement/time
+    print(velocity)
+
+#TO CALCULATE MAXIMUM HEIGHT OF A PROJECTILE
+def d():
+    Acceleration_due_to_gravity = float(input('enter your acceleration due to gravity'))
+    time = float(input('enter your time'))
+    maximum_height = (1/2)*Acceleration_due_to_gravity * time
+    print(maximum_height)
+
+#TO CALCULATE THE area of a rectangle
+def e():
+    length = float(input('enter your length'))
+    breadth = float(input('enter your breadth'))
+    area_of_a_rectangle = length * breadth
+    print(area_of_a_rectangle)
+
+def main():
+    user_input= input('enter the operation you would like to perform')
+    if user_input == "a":
+        a()
+    elif user_input == "b":
+        b()
+    elif user_input == "c":
+        c()
+    elif user_input == "d":
+        d()
+    elif user_input == "e":
+        e()
+    else:
+      print("invalid_input")
+if __name__ == '__main__':
+    main()
